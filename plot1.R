@@ -1,5 +1,5 @@
 #read txt
-dataset<-read.csv("./Assignement1/household_power_consumption.txt", header=TRUE, sep=";",colClasses = c("character", "character", rep("numeric",7)), na="?")
+dataset<-read.csv("./Assignment1/household_power_consumption.txt", header=TRUE, sep=";",colClasses = c("character", "character", rep("numeric",7)), na="?")
 #filter data
 data <- dataset[(dataset$Date == "1/2/2007") | (dataset$Date == "2/2/2007"),]
 #transform data & time
